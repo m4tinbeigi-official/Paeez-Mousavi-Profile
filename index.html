@@ -1,64 +1,106 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>PixelSoul | Paeez Mousavi</title>
-<style>
+  <meta charset="UTF-8">
+  <title>PixelSoul | Paeez Mousavi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: #111;
+    }
 
-.pixel {
-  width: 8px;
-  height: 8px;
-  float: left;
-}
-.clear {
-  clear: both;
-}
-body {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-}
+    .pixel-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
+    .pixel {
+      width: 8px;
+      height: 8px;
+      float: left;
+    }
 
-body {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  font-family: monospace;
-  color: #333;
-}
-.profile {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.profile h1 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-.profile .email {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.social-links a {
-  display: inline-block;
-  margin: 5px 10px;
-  padding: 6px 12px;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: background 0.3s;
-}
-.social-links a:hover {
-  background: #444;
-}
+    .clear {
+      clear: both;
+    }
 
-.gray0 { background-color: #000000; }
+    .profile {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 500;
+      color: #555;
+      margin: 8px 0 20px;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .social-links a:hover {
+      background: #444;
+    }
+
+    .social-links a svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .pixel {
+        width: 5px;
+        height: 5px;
+      }
+      .profile img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+	
+	.gray0 { background-color: #000000; }
 .gray1 { background-color: #010101; }
 .gray2 { background-color: #020202; }
 .gray3 { background-color: #030303; }
@@ -153,21 +195,9 @@ body {
 .gray92 { background-color: #d6d6d6; }
 .gray93 { background-color: #fefefe; }
 .gray94 { background-color: #ffffff; }
-</style>
+  </style>
 </head>
 <body>
-
-<div class="profile">
-  <h1>Paeez Mousavi</h1>
-  <p class="email">📧 <a href="mailto:mousavipaeez@gmail.com">mousavipaeez@gmail.com</a></p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/paeez_mousavi/" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/paeez-mousavi" target="_blank">LinkedIn</a>
-    <a href="https://www.behance.net/paeez_mousavi" target="_blank">Behance</a>
-    <a href="https://twitter.com/Paeez_Mousavi" target="_blank">Twitter</a>
-  </div>
-</div>
-
 <div class="container">
 <div class="pixel gray94"></div>
 <div class="pixel gray94"></div>
@@ -2522,5 +2552,20 @@ body {
 <div class="pixel gray94"></div>
 <div class="clear"></div>
 </div>
+  <div class="profile">
+    <h1>Paeez Mousavi</h1>
+    <div class="tagline">#GoodDesignMakeYouSmile</div>
+    <div class="social-links">
+      <a href="mailto:mousavipaeez@gmail.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24"><path d="M20 4H4C2.89 4 2 .89 2 2v20c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zM4 8l8 5 8-5v12H4V8z"/></svg>
+        Gmail
+      </a>
+      <a href="https://www.instagram.com/paeez_mousavi/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/paeez-mousavi" target="_blank">LinkedIn</a>
+      <a href="https://www.behance.net/paeez_mousavi" target="_blank">Behance</a>
+      <a href="https://twitter.com/Paeez_Mousavi" target="_blank">Twitter</a>
+      <a href="https://objkt.com/profile/tz1Lim2BTJhTM9iFLFyZyheh9JK22QDrFabu/created" target="_blank">Objkt</a>
+    </div>
+  </div>
 </body>
 </html>
